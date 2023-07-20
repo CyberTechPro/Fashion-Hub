@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+img {
+    object-fit: cover;
+}
+
+nav {
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand span {
+    color: rgb(209, 140, 12);
+}
+
+.nav-item {
+    margin: 5px 0;
+}
+
+
+@media screen and (min-width:768px) {
+    .icon-li {
+        margin-left: 20px;
+    }
+
+    .icon-li a {
+        padding: 2px;
+    }
+
+    .nav-item {
+        margin: 0 10px;
+    }
+}
+
+.icon {
+    font-size: 30px;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.icon:hover {
+    outline: 1px solid black;
+   
+}
+
+
+.user-menu {
+    transform: translateX(-80%);
+    width: 20px;
+    padding: 4px 0;
+}
+
+.user-menu a {
+    margin: 2px 0;
+    padding-left: 7px;
+}
+
+.btn-primary {
+    background-color: #22A699 ;
+    border: none;
+}
+
+.btn-outline-primary {
+    border: 1px solid #22A699;
+    color: #22A699;
+}
+
+.text-bg-primary {
+    background-color: #22A699 !important;
+}
+
+.border-primary {
+    border-color: #22A699 !important;
+}
+
+.orange-clr {
+    color: rgb(209, 140, 12) ;
+}
+
+.text-body-secondary {
+    color: #22A699 !important;
+    font-weight: 600;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #22A699;
+}
+
+header {
+    height: 60vh;
+}
+
+.contact-img {
+    position: absolute;
+    width: 100%;
+    height: 60vh;
+    top: 1;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.1rem;
+    padding: 20px;
+    justify-content: center;
+    height: 60vh;
+}
+
+.email * , .phone * , .social-media a div, .social-media a {
+    display: inline;
+    text-decoration: none;
+    color:  #49d7c9;
+}
+
+.email-b {
+    display: inline-block;
+}
+
+.phone-b {
+    display: inline-block;
+}
+
+.email-b:hover .email *, .phone-b:hover .phone * , .social-media a div:hover, .social-media a:hover {
+    color: #22A699;
+}
+
+.social-media a {
+    margin: 0 5px;
+    font-size: 1.5rem;
+}
+
+.contact-content h2 {
+    font-weight: 700;
+}
+
+.email * , .phone * {
+    margin: 5px;
+}
+
+.contact-form {
+    margin: 0 auto;
+}
+
+.form-heading {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.message-box {
+    height: 50px;
+}
+
+
+.footer-brand {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    overflow: hidden;
+}
+
+.footer-item {
+    position: relative;
+    display: inline;
+}
+
+.footer-item:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% + 4px);
+    height: 3px;
+    background-color: #F2BE22;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+
+.footer-item:hover::before {
+    transform: translateX(0%);
+}
+
+.footer-b {
+    background-color: #FFEEBB;
+    width: 100%;
+}
+
+@media screen and (max-width:920px) {
+    header {
+        height: 50vh;
+    }
+    
+    .contact-img {
+        height: 50vh;
+    }
+    
+    .contact-content {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: 40vh;
+    }
+    
+    .contact-img {
+        height: 40vh;
+    }
+    
+    .contact-content {
+        height: 40vh;
+    }
+}
+
+@media screen and (max-width:570px) {
+    header {
+        height: 30vh;
+    }
+    
+    .contact-img {
+        height: 30vh;
+    }
+    
+    .contact-content {
+        height: 30vh;
+        padding: 10px;
+    }
+
+    .contact-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .social-media a {
+    font-size: 1.3rem;
+    }
+
+    .contact-content {
+    font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:428px) {
+    header {
+        height: 20vh;
+    }
+    
+    .contact-img {
+        height: 20vh;
+    }
+    
+    .contact-content {
+        height: 20vh;
+    }
+
+    .social-text {
+        font-size: 0.8rem;
+    }
+
+    .contact-content h2 {
+        font-size: 0.8rem;
+    }
+
+    .social-media a {
+    font-size: 0.8rem;
+    }
+
+    .contact-content {
+    font-size: 0.6rem;
+    }
+}
